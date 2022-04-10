@@ -56,8 +56,11 @@
 
   &__avatar {
     grid-area: avatar;
-    width: $avatarSize;
-    height: $avatarSize;
+
+    img {
+      width: $avatarSize;
+      height: $avatarSize;
+    }
   }
 
   &__username {

@@ -804,6 +804,9 @@ img {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: avatar;
+}
+
+.review__avatar img {
   width: 3rem;
   height: 3rem;
 }
