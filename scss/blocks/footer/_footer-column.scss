@@ -1,0 +1,19 @@
+.footer-column {
+  &__title {
+    margin: 0 0 $base * 3;
+    @include subtitle(1);
+    color: $darkPurple;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: $base;
+    }
+  }
+
+  &__link {
+    @include body(1);
+    color: $purpleText;
+  }
+
+}

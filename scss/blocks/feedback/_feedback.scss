@@ -1,0 +1,24 @@
+.feedback {
+  background-color: $white;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $base * 10;
+
+    padding: {
+      top: $base * 28;
+      bottom: $base * 30;
+    }
+
+    > * {
+      flex-basis: calc(50% - #{$containerIndent});
+    }
+  }
+
+  &__title {
+    margin: 0 auto 0 0;
+    max-width: $base * 95;
+    @include title(2);
+  }
+}

@@ -1,0 +1,31 @@
+@import './vendor/normalize';
+
+@import './mixins/font-face';
+@import './mixins/px-to-rem';
+
+@import './global/variables';
+@import './global/fonts';
+@import './global/typography';
+@import './global/global';
+
+@import './components/container';
+@import './components/logo';
+@import './components/button';
+
+@import './blocks/header/header';
+
+@import './blocks/nav/nav';
+
+@import './blocks/banner/banner';
+
+@import './blocks/tarifs/tarifs';
+@import './blocks/tarifs/tarif';
+
+@import './blocks/feedback/feedback';
+
+@import './blocks/review/review';
+
+@import './blocks/footer/footer';
+@import './blocks/footer/footer-column';
+
+@import './blocks/social/social';

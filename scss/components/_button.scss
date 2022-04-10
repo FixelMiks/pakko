@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: $primaryRadius;
+  padding: $base * 3 $base * 6;
+  @include body(1);
+  color: $white;
+  background: $purple;
+  cursor: pointer;
+
+  &--border {
+    border-color: $white;
+    background: transparent;
+  }
+
+  &--xxl {
+    padding: $base * 4 $base * 9;
+  }
+}

@@ -1,0 +1,19 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: $base * 10;
+    }
+  }
+
+  &__link {
+    margin: 0;
+    @include body(1);
+    color: $darkPurple;
+  }
+}

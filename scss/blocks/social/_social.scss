@@ -1,0 +1,11 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: $base * 6;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: $base * 6;
+    }
+  }
+}

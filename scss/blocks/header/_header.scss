@@ -1,0 +1,16 @@
+.header {
+  background-color: $white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: {
+      top: $base * 5;
+      bottom: $base * 5;
+    }
+  }
+
+  &__nav {
+    margin: 0 $base * 5 0 auto;
+  }
+}

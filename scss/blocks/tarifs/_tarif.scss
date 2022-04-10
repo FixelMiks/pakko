@@ -1,0 +1,128 @@
+.tarif {
+  overflow: hidden;
+  border-radius: $primaryRadius;
+  background-color: $lightGray;
+
+  &__header {
+    display: flex;
+    padding: $base * 6;
+    min-height: 250px;
+    background-image: url("../images/tarifs/tarif-01.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &-content {
+      display: grid;
+      grid-template-areas:
+        "logo ."
+        "title price";
+      align-items: center;
+      margin-top: auto;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__title {
+    grid-area: title;
+    margin: $base * 4 0;
+    @include body(2);
+    color: $white;
+  }
+
+  &__price {
+    justify-self: end;
+    grid-area: price;
+    margin: 0;
+    color: $white;
+    font-size: $base * 12;
+    line-height: $base * 14;
+
+    span {
+      @include body(1);
+      color: $white;
+    }
+  }
+
+  &__list {
+    padding: $base * 6;
+  }
+
+  &__item {
+    $size: 24px;
+
+    padding-left: $size + 8px;
+    background-image: url("../images/icons/check-1.svg");
+    background-size: $size;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      margin-bottom: $base * 3;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    @include subtitle(1);
+    color: $darkPurple;
+  }
+
+  &[aria-color="purple"] {
+    background-color: $lightGray;
+
+    .tarif {
+      &__header {
+        background-image: url("../images/tarifs/tarif-1.svg");
+      }
+
+      &__title {
+        color: $white;
+      }
+
+      &__item {
+        background-image: url("../images/icons/check-1.svg");
+      }
+    }
+  }
+
+  &[aria-color="green"] {
+    background-color: $lightGreen;
+
+    .tarif {
+      &__header {
+        background-image: url("../images/tarifs/tarif-2.svg");
+      }
+
+      &__title {
+        color: $green;
+      }
+
+      &__item {
+        background-image: url("../images/icons/check-2.svg");
+      }
+    }
+  }
+
+  &[aria-color="yellow"] {
+    background-color: $lightYellow;
+
+    .tarif {
+      &__header {
+        background-image: url("../images/tarifs/tarif-3.svg");
+      }
+
+      &__title {
+        color: $yellow;
+      }
+
+      &__item {
+        background-image: url("../images/icons/check-3.svg");
+      }
+    }
+  }
+}

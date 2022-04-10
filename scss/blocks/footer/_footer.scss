@@ -1,0 +1,26 @@
+.footer {
+  background-color: $lightGray;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: {
+      top: $base * 14;
+      bottom: $base * 15;
+    }
+  }
+
+  &__content {
+    max-width: $base * 53;
+  }
+
+  &__logo {
+    margin-bottom: $base * 6;
+  }
+
+  &__text {
+    margin: 0 0 $base * 6;
+    @include body(1);
+    color: $purpleText;
+  }
+}

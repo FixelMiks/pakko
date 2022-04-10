@@ -1,0 +1,46 @@
+@mixin body($set) {
+  @if $set == 1 {
+    font: {
+      weight: 400;
+      size: $base * 4;
+    }
+    line-height: $base * 6;
+  }
+
+  @if $set == 2 {
+    font: {
+      weight: 400;
+      size: $base * 6;
+    }
+    line-height: $base * 6;
+  }
+}
+
+@mixin title($set) {
+  @if $set == 1 {
+    font: {
+      weight: 400;
+      size: $base * 14;
+    }
+    line-height: $base * 16;
+    letter-spacing: 0.56px;
+  }
+
+  @if $set == 2 {
+    font: {
+      weight: 700;
+      size: $base * 12;
+    }
+    line-height: $base * 14;
+  }
+}
+
+@mixin subtitle($set) {
+  @if $set == 1 {
+    font: {
+      weight: 700;
+      size: $base * 4;
+    }
+    line-height: $base * 6;
+  }
+}

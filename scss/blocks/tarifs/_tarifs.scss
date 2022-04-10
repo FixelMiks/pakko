@@ -1,0 +1,24 @@
+.tarifs {
+  background-color: $white;
+
+  &__container {
+    padding: {
+      top: $base * 54;
+      bottom: $base * 22;
+    }
+  }
+
+  &__title {
+    margin: 0 auto $base * 15;
+    max-width: $base * 150;
+    @include title(2);
+    text-align: center;
+    color: $darkPurple;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($base * 84, 1fr));
+    gap: $base * 6;
+  }
+}

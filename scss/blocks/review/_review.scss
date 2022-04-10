@@ -1,0 +1,101 @@
+.review {
+  $avatarSize: $base * 12;
+
+  border-radius: $primaryRadius;
+  padding: $base * 10;
+  background-color: $lightRed;
+  height: max-content;
+
+  &:nth-of-type(5n+1) {
+    background-color: $lightRed;
+  }
+
+  &:nth-of-type(5n+2) {
+    background-color: $lightPurple;
+  }
+
+  &:nth-of-type(5n+3) {
+    background-color: $lightBlue;
+  }
+
+  &:nth-of-type(5n+4) {
+    background-color: $lightGreen;
+  }
+
+  &:nth-of-type(5n+5) {
+    background-color: $lightYellow;
+  }
+
+  &__header {
+    position: relative;
+    display: grid;
+    grid-template-columns: $avatarSize 1fr;
+    grid-template-areas:
+      "avatar username"
+      "avatar userlink";
+    align-items: center;
+    column-gap: $base * 4;
+    margin-bottom: $base * 8;
+
+    &::before {
+      $size: 24px;
+
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      width: $size;
+      height: $size;
+      background-image: url("../images/icons/forum.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__avatar {
+    grid-area: avatar;
+    width: $avatarSize;
+    height: $avatarSize;
+  }
+
+  &__username {
+    grid-area: username;
+    margin: 0;
+    @include subtitle(1);
+    color: $darkPurple;
+  }
+
+  &__userlink {
+    grid-area: userlink;
+    margin: 0;
+    @include body(1);
+    color: $purpleText;
+  }
+
+  &__descr {
+    margin: 0;
+    @include body(1);
+    letter-spacing: 0.18px;
+    color: $purpleText;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: $base * 5 0 0;
+    color: $darkPurple;
+  }
+
+  &[aria-type="forum"] {
+    .review__header::before {
+      background-image: url("../images/icons/forum.svg");
+    }
+  }
+
+  &[aria-type="twitter"] {
+    .review__header::before {
+      background-image: url("../images/icons/twitter.svg");
+    }
+  }
+}

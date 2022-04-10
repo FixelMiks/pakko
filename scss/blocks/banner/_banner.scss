@@ -1,0 +1,42 @@
+.banner {
+  background-color: $darkPurple;
+
+  &__container {
+    padding: {
+      top: $base * 16;
+      bottom: $base * 15;
+    }
+    text-align: center;
+  }
+
+  &__info {
+    margin: 0 auto;
+    max-width: $base * 150;
+  }
+
+  &__title {
+    margin: 0 0 $base * 7;
+
+    @include title(1);
+    color: $white;
+  }
+
+  &__descr {
+    margin: 0 0 $base * 12;
+    @include body(1);
+    color:#b7b5c1;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $base * 4;
+  }
+
+  &__image {
+    margin: $base * -55 auto 0;
+    transform: translateY($base * 44);
+  }
+}
