@@ -72,7 +72,7 @@
     color: $darkPurple;
   }
 
-  &[aria-color="purple"] {
+  &--purple {
     background-color: $lightGray;
 
     .tarif {
@@ -90,7 +90,7 @@
     }
   }
 
-  &[aria-color="green"] {
+  &--green {
     background-color: $lightGreen;
 
     .tarif {
@@ -108,7 +108,7 @@
     }
   }
 
-  &[aria-color="yellow"] {
+  &--yellow {
     background-color: $lightYellow;
 
     .tarif {

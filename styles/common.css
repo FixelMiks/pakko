@@ -665,51 +665,51 @@ img {
   color: #100a30;
 }
 
-.tarif[aria-color="purple"] {
+.tarif--purple {
   background-color: #f8f8f9;
 }
 
-.tarif[aria-color="purple"] .tarif__header {
+.tarif--purple .tarif__header {
   background-image: url("../images/tarifs/tarif-1.svg");
 }
 
-.tarif[aria-color="purple"] .tarif__title {
+.tarif--purple .tarif__title {
   color: #fff;
 }
 
-.tarif[aria-color="purple"] .tarif__item {
+.tarif--purple .tarif__item {
   background-image: url("../images/icons/check-1.svg");
 }
 
-.tarif[aria-color="green"] {
+.tarif--green {
   background-color: #e8faf3;
 }
 
-.tarif[aria-color="green"] .tarif__header {
+.tarif--green .tarif__header {
   background-image: url("../images/tarifs/tarif-2.svg");
 }
 
-.tarif[aria-color="green"] .tarif__title {
+.tarif--green .tarif__title {
   color: #19c787;
 }
 
-.tarif[aria-color="green"] .tarif__item {
+.tarif--green .tarif__item {
   background-image: url("../images/icons/check-2.svg");
 }
 
-.tarif[aria-color="yellow"] {
+.tarif--yellow {
   background-color: #fff5e1;
 }
 
-.tarif[aria-color="yellow"] .tarif__header {
+.tarif--yellow .tarif__header {
   background-image: url("../images/tarifs/tarif-3.svg");
 }
 
-.tarif[aria-color="yellow"] .tarif__title {
+.tarif--yellow .tarif__title {
   color: #ff9f1c;
 }
 
-.tarif[aria-color="yellow"] .tarif__item {
+.tarif--yellow .tarif__item {
   background-image: url("../images/icons/check-3.svg");
 }
 
@@ -845,11 +845,11 @@ img {
   color: #100a30;
 }
 
-.review[aria-type="forum"] .review__header::before {
+.review--forum .review__header::before {
   background-image: url("../images/icons/forum.svg");
 }
 
-.review[aria-type="twitter"] .review__header::before {
+.review--twitter .review__header::before {
   background-image: url("../images/icons/twitter.svg");
 }
 

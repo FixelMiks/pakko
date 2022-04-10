@@ -31,7 +31,7 @@
         </ul>
       </nav>
       <div class="header__buttons">
-        <button class="button" href="#">S'inscrire</button>
+        <a class="button" href="#">S'inscrire</a>
       </div>
     </div>
   </header>
@@ -52,7 +52,10 @@
           <a class="button button--xxl button--border" href="#">Voir la vidéo</a>
         </div>
       </div>
-      <img class="banner__image" src="./images/banner/banner.png" alt="Banner">
+      <picture>
+        <source srcset="./images/banner/banner.webp, ./images/banner/banner@2x.webp 2x" type="image/webp">
+        <img class="banner__image" src="./images/banner/banner.png" srcset="./images/banner/banner@2x.png 2x" alt="Banner">
+      </picture>
     </section>
 
     <section class="tarifs">
@@ -62,7 +65,7 @@
         </h2>
         <ul class="tarifs__list">
           <li class="tarifs__item">
-            <div class="tarif" aria-color="purple">
+            <div class="tarif tarif--purple">
               <div class="tarif__header">
                 <div class="tarif__header-content">
                   <img class="tarif__logo" src="./images/logo/logo-black.svg" alt="Pakko Logo">
@@ -86,7 +89,7 @@
             </div>
           </li>
           <li class="tarifs__item">
-            <div class="tarif" aria-color="green">
+            <div class="tarif tarif--green">
               <div class="tarif__header">
                 <div class="tarif__header-content">
                   <img class="tarif__logo" src="./images/logo/logo-black.svg" alt="Pakko Logo">
@@ -112,7 +115,7 @@
             </div>
           </li>
           <li class="tarifs__item">
-            <div class="tarif" aria-color="yellow">
+            <div class="tarif tarif--yellow">
               <div class="tarif__header">
                 <div class="tarif__header-content">
                   <img class="tarif__logo" src="./images/logo/logo-black.svg" alt="Pakko Logo">
@@ -146,9 +149,12 @@
         <h2 class="feedback__title">
           Ils en parlent mieux que nous
         </h2>
-        <div class="review" aria-type="forum">
+        <div class="review review--forum">
           <div class="review__header">
-            <img class="review__avatar" src="./images/avatars/avatar-1.png" alt="Review Avatar">
+            <picture>
+              <source srcset="./images/avatars/avatar-1.webp, ./images/avatars/avatar-1@2x.webp 2x" type="image/webp">
+              <img class="review__avatar" src="./images/avatars/avatar-1.png" srcset="./images/avatars/avatar-1@2x.png 2x" alt="Review Avatar">
+            </picture>
             <p class="review__username">
               Retour utilisateur
             </p>
@@ -160,9 +166,12 @@
             C’est exactement ce que je cherchais.
           </p>
         </div>
-        <div class="review" aria-type="twitter">
+        <div class="review review--twitter">
           <div class="review__header">
-            <img class="review__avatar" src="./images/avatars/avatar-2.png" alt="Review Avatar">
+            <picture>
+              <source srcset="./images/avatars/avatar-2.webp, ./images/avatars/avatar-2@2x.webp 2x" type="image/webp">
+              <img class="review__avatar" src="./images/avatars/avatar-2.png" srcset="./images/avatars/avatar-2@2x.png 2x" alt="Review Avatar">
+            </picture>
             <p class="review__username">
               Antony Legrand
             </p>
@@ -175,9 +184,12 @@
           </p>
           <a class="review__link" href="#">Voir le post</a>
         </div>
-        <div class="review" aria-type="twitter">
+        <div class="review review--twitter">
           <div class="review__header">
-            <img class="review__avatar" src="./images/avatars/avatar-3.png" alt="Review Avatar">
+            <picture>
+              <source srcset="./images/avatars/avatar-3.webp, ./images/avatars/avatar-3@2x.webp 2x" type="image/webp">
+              <img class="review__avatar" src="./images/avatars/avatar-3.png" srcset="./images/avatars/avatar-3@2x.png 2x" alt="Review Avatar">
+            </picture>
             <p class="review__username">
               Matthieu Teyssandier
             </p>
@@ -190,9 +202,12 @@
           </p>
           <a class="review__link" href="#">Voir le post</a>
         </div>
-        <div class="review" aria-type="forum">
+        <div class="review review--forum">
           <div class="review__header">
-            <img class="review__avatar" src="./images/avatars/avatar-4.png" alt="Review Avatar">
+            <picture>
+              <source srcset="./images/avatars/avatar-4.webp, ./images/avatars/avatar-4@2x.webp 2x" type="image/webp">
+              <img class="review__avatar" src="./images/avatars/avatar-4.png" srcset="./images/avatars/avatar-4@2x.png 2x" alt="Review Avatar">
+            </picture>
             <p class="review__username">
               Retour utilisateur
             </p>
@@ -204,9 +219,12 @@
             Un onboarding clair et vraiment bien pensé. +10 pour les liens vers le site de l’URSSAF lors de l’inscription.
           </p>
         </div>
-        <div class="review" aria-type="forum">
+        <div class="review review--forum">
           <div class="review__header">
-            <img class="review__avatar" src="./images/avatars/avatar-5.png" alt="Review Avatar">
+            <picture>
+              <source srcset="./images/avatars/avatar-5.webp, ./images/avatars/avatar-5@2x.webp 2x" type="image/webp">
+              <img class="review__avatar" src="./images/avatars/avatar-5.png" srcset="./images/avatars/avatar-5@2x.png 2x" alt="Review Avatar">
+            </picture>
             <p class="review__username">
               Retour utilisateur
             </p>

@@ -87,13 +87,13 @@
     color: $darkPurple;
   }
 
-  &[aria-type="forum"] {
+  &--forum {
     .review__header::before {
       background-image: url("../images/icons/forum.svg");
     }
   }
 
-  &[aria-type="twitter"] {
+  &--twitter {
     .review__header::before {
       background-image: url("../images/icons/twitter.svg");
     }
