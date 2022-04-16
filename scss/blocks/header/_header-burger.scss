@@ -1,0 +1,21 @@
+.header-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  background: 0;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+  }
+}

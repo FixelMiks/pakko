@@ -3,14 +3,92 @@
 
   &__container {
     display: flex;
-    align-items: center;
     padding: {
       top: $base * 5;
       bottom: $base * 5;
     }
   }
 
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
   &__nav {
-    margin: 0 $base * 5 0 auto;
+    margin-right: $base * 5;
+  }
+
+  @media (min-width: 768px) {
+    &-burger {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__container {
+      padding: 0;
+    }
+
+    &__top {
+      z-index: 10;
+      justify-content: space-between;
+      padding: $base * 8 $containerIndent;
+      width: 100%;
+      background-color: $white;
+    }
+
+    &__menu {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $white;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &__nav {
+      margin: 0 0 $base * 10;
+    }
+
+    .nav {
+      &__list {
+        flex-direction: column;
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin: 0 0 $base * 5;
+        }
+      }
+
+      &__link {
+        @include body(2);
+      }
+    }
+
+    &.is-open {
+      .header__top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .header__menu {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }
