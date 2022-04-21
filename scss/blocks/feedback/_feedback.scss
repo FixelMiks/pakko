@@ -21,4 +21,16 @@
     max-width: $base * 95;
     @include title(2);
   }
+
+  @media (max-width: 605px) {
+    &__container {
+      flex-direction: column;
+      gap: $base * 5;
+    }
+
+    &__title {
+      @include title(4);
+    }
+  }
 }
+

@@ -24,13 +24,13 @@
     margin-right: $base * 5;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     &-burger {
       display: none;
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     &__container {
       padding: 0;
     }

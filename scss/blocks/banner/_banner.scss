@@ -39,4 +39,16 @@
     margin: $base * -55 auto 0;
     transform: translateY($base * 44);
   }
+
+  @media (max-width: 768px) {
+    &__title {
+      @include title(3);
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__title {
+      @include title (4)
+    }
+  }
 }

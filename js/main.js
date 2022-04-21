@@ -5,5 +5,6 @@ const headerBurger = document.querySelector('.header-burger');
 headerBurger.addEventListener("click", () => {
   body.classList.toggle('scroll-disabled');
   header.classList.toggle('is-open');
+  headerBurger.classList.toggle('is-open');
 });
 

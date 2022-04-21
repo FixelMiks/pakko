@@ -18,4 +18,11 @@
     height: 2px;
     background-color: $black;
   }
+  // анимация для сверхлюдей, пофиксить
+  &.is-open {
+    span {
+      transition: rotate(45deg);
+      color: purple;
+    }
+  }
 }

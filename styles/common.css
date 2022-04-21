@@ -478,6 +478,12 @@ img {
   background-color: #000;
 }
 
+.header-burger.is-open span {
+  -webkit-transition: rotate(45deg);
+  transition: rotate(45deg);
+  color: purple;
+}
+
 .header {
   background-color: #fff;
 }
@@ -513,13 +519,13 @@ img {
   margin-right: 1.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-burger {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header__container {
     padding: 0;
   }
@@ -656,6 +662,23 @@ img {
           transform: translateY(11rem);
 }
 
+@media (max-width: 768px) {
+  .banner__title {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.56px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
 .tarifs {
   background-color: #fff;
 }
@@ -681,6 +704,14 @@ img {
   -ms-grid-columns: (minmax(21rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   gap: 1.5rem;
+}
+
+@media (max-width: 605px) {
+  .tarifs__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 .tarif {
@@ -848,6 +879,21 @@ img {
   line-height: 3.5rem;
 }
 
+@media (max-width: 605px) {
+  .feedback__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.25rem;
+  }
+  .feedback__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
 .review {
   border-radius: 8px;
   padding: 2.5rem;
@@ -994,6 +1040,41 @@ img {
   color: #4c4767;
 }
 
+@media (max-width: 700px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .footer__content {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+    max-width: auto;
+  }
+  .footer-column {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 490px) {
+  .footer__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .footer__content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 50%;
+  }
+  .footer-column {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 .footer-column__title {
   margin: 0 0 0.75rem;
   font-weight: 700;
@@ -1025,3 +1106,4 @@ img {
 .social__item:not(:last-child) {
   margin-right: 1.5rem;
 }
+/*# sourceMappingURL=common.css.map */

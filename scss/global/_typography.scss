@@ -33,6 +33,23 @@
     }
     line-height: $base * 14;
   }
+
+  @if $set == 3 {
+    font: {
+      weight: 400;
+      size: $base * 12;
+    }
+    line-height: $base * 14;
+    letter-spacing: 0.56px;
+  }
+
+  @if $set == 4 {
+    font: {
+      weight: 700;
+      size: $base * 10;
+    }
+    line-height: $base * 14;
+  }
 }
 
 @mixin subtitle($set) {
