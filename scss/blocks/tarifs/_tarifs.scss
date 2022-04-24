@@ -21,10 +21,4 @@
     grid-template-columns: repeat(auto-fit, minmax($base * 84, 1fr));
     gap: $base * 6;
   }
-
-  @media (max-width: 605px) {
-    &__title {
-      @include title(4);
-    }
-  }
 }

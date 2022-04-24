@@ -23,39 +23,33 @@
     @include body(1);
     color: $purpleText;
   }
-  
-  @media (max-width: 700px) {
-      &__container {
-        flex-wrap: wrap;
-        gap: $base * 5;
-      }
-  
-      &__content {
-        flex-basis: calc(50% - #{$containerIndent});
-        max-width: auto;
-      }
-  
-      &-column {
-        flex-basis: calc(50% - #{$containerIndent});
-      }
-  }
 
-  @media (max-width: 490px) {
+  @include minitablet(max) {
     &__container {
-      justify-content: space-around;
-      padding: {
-        top: $base * 10;
-        bottom: $base * 10;
+      flex-wrap: wrap;
+      gap: $base * 5;
+
+      > * {
+        flex-basis: calc(50% - #{$containerIndent});
       }
     }
 
     &__content {
-      flex-basis: 50%;
-      width: 50%;
+      max-width: 100%;
     }
-    
-    &-column {
-      flex-basis: 50%;
+  }
+
+  @include mobile(max) {
+    &__container {
+      flex-direction: column;
+      padding: {
+        top: $base * 10;
+        bottom: $base * 10;
+      }
+
+      > * {
+        flex-basis: auto;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const main = document.querySelector('main');
 const header = document.querySelector('.header');
 const headerBurger = document.querySelector('.header-burger');
 

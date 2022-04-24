@@ -17,12 +17,26 @@
     width: 20px;
     height: 2px;
     background-color: $black;
+    transition: all $primaryAnimation;
+    transition-property: transform, opacity, visibility;
   }
-  // анимация для сверхлюдей, пофиксить
+
   &.is-open {
     span {
-      transition: rotate(45deg);
-      color: purple;
+      width: 21px;
+
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -4px);
+      }
     }
   }
 }

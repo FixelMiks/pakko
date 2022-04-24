@@ -24,18 +24,22 @@
     margin-right: $base * 5;
   }
 
-  @media (min-width: 769px) {
+  @include minitablet(min) {
     &-burger {
       display: none;
     }
   }
 
-  @media (max-width: 768px) {
+  @include minitablet(max) {
     &__container {
       padding: 0;
     }
 
     &__top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 10;
       justify-content: space-between;
       padding: $base * 8 $containerIndent;
@@ -44,6 +48,7 @@
     }
 
     &__menu {
+      overflow-y: auto;
       position: fixed;
       top: 0;
       bottom: 0;
@@ -51,10 +56,17 @@
       right: 0;
       z-index: 5;
       flex-direction: column;
-      justify-content: center;
+      padding: 120px 20px 20px;
       background-color: $white;
       opacity: 0;
       visibility: hidden;
+      transform: translateY(-100%);
+      transition: all $primaryAnimation;
+      transition-property: opacity, visibility, transform;
+
+      @media (min-height: 400px) {
+        justify-content: center;
+      }
     }
 
     &__nav {
@@ -78,16 +90,10 @@
     }
 
     &.is-open {
-      .header__top {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-      }
-
       .header__menu {
         opacity: 1;
         visibility: visible;
+        transform: translateY(0%);
       }
     }
   }

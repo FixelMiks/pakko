@@ -22,7 +22,7 @@
     @include title(2);
   }
 
-  @media (max-width: 605px) {
+  @include minitablet(max) {
     &__container {
       flex-direction: column;
       gap: $base * 5;

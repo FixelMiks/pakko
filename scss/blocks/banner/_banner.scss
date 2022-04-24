@@ -7,6 +7,10 @@
       bottom: $base * 15;
     }
     text-align: center;
+
+    @include minitablet(max) {
+      padding-top: $base * 38;
+    }
   }
 
   &__info {
@@ -40,15 +44,9 @@
     transform: translateY($base * 44);
   }
 
-  @media (max-width: 768px) {
+  @include minitablet(max) {
     &__title {
       @include title(3);
-    }
-  }
-
-  @media (max-width: 600px) {
-    &__title {
-      @include title (4)
     }
   }
 }
