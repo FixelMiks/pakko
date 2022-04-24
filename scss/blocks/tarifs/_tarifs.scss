@@ -6,6 +6,13 @@
       top: $base * 54;
       bottom: $base * 22;
     }
+
+    @include tablet(max) {
+      padding: {
+        top: $base * 27;
+        bottom: $base * 11;
+      }
+    }
   }
 
   &__title {
@@ -18,7 +25,7 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($base * 84, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax($base * 80, 1fr));
     gap: $base * 6;
   }
 }

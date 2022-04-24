@@ -44,9 +44,18 @@
     transform: translateY($base * 44);
   }
 
-  @include minitablet(max) {
-    &__title {
-      @include title(3);
+  @include tablet(max) {
+    overflow: hidden;
+
+    &__container {
+      padding-bottom: $base * 5;
+    }
+
+    &__image {
+      margin: 0 auto $base * -20;
+      width: 768px;
+      max-width: none;
+      transform: none;
     }
   }
 }

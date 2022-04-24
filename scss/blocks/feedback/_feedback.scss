@@ -14,6 +14,13 @@
     > * {
       flex-basis: calc(50% - #{$containerIndent});
     }
+
+    @include tablet(max) {
+      padding: {
+        top: $base * 14;
+        bottom: $base * 15;
+      }
+    }
   }
 
   &__title {
@@ -29,7 +36,9 @@
     }
 
     &__title {
-      @include title(4);
+      margin: 0 0 $base * 10;
+      align-self: center;
+      text-align: center;
     }
   }
 }

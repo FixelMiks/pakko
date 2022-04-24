@@ -4,6 +4,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    gap: $base * 5;
     padding: {
       top: $base * 14;
       bottom: $base * 15;
@@ -27,7 +28,6 @@
   @include minitablet(max) {
     &__container {
       flex-wrap: wrap;
-      gap: $base * 5;
 
       > * {
         flex-basis: calc(50% - #{$containerIndent});

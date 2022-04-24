@@ -682,6 +682,12 @@ img {
   color: #fff;
 }
 
+@media (max-width: 1023px) {
+  .banner__title {
+    font-size: 3rem;
+  }
+}
+
 .banner__descr {
   margin: 0 0 3rem;
   font-weight: 400;
@@ -711,12 +717,19 @@ img {
           transform: translateY(11rem);
 }
 
-@media (max-width: 767px) {
-  .banner__title {
-    font-weight: 400;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.56px;
+@media (max-width: 1023px) {
+  .banner {
+    overflow: hidden;
+  }
+  .banner__container {
+    padding-bottom: 1.25rem;
+  }
+  .banner__image {
+    margin: 0 auto -5rem;
+    width: 768px;
+    max-width: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -729,6 +742,13 @@ img {
   padding-bottom: 5.5rem;
 }
 
+@media (max-width: 1023px) {
+  .tarifs__container {
+    padding-top: 6.75rem;
+    padding-bottom: 2.75rem;
+  }
+}
+
 .tarifs__title {
   margin: 0 auto 3.75rem;
   max-width: 37.5rem;
@@ -739,11 +759,17 @@ img {
   color: #100a30;
 }
 
+@media (max-width: 1023px) {
+  .tarifs__title {
+    font-size: 2.5rem;
+  }
+}
+
 .tarifs__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(21rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -817,9 +843,9 @@ img {
 }
 
 .tarif__item {
-  padding-left: 32px;
+  padding-left: calc(1.5rem + 8px);
   background-image: url("../images/icons/check-1.svg");
-  background-size: 24px;
+  background-size: 1.5rem;
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -904,12 +930,25 @@ img {
       flex-basis: calc(50% - 20px);
 }
 
+@media (max-width: 1023px) {
+  .feedback__container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.75rem;
+  }
+}
+
 .feedback__title {
   margin: 0 auto 0 0;
   max-width: 23.75rem;
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.5rem;
+}
+
+@media (max-width: 1023px) {
+  .feedback__title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -921,9 +960,11 @@ img {
     gap: 1.25rem;
   }
   .feedback__title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    margin: 0 0 2.5rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
   }
 }
 
@@ -1053,6 +1094,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1.25rem;
   padding-top: 3.5rem;
   padding-bottom: 3.75rem;
 }
@@ -1077,7 +1119,6 @@ img {
   .footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 1.25rem;
   }
   .footer__container > * {
     -ms-flex-preferred-size: calc(50% - 20px);
