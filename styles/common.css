@@ -1094,6 +1094,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.25rem;
   padding-top: 3.5rem;
   padding-bottom: 3.75rem;
@@ -1117,8 +1119,7 @@ img {
 
 @media (max-width: 767px) {
   .footer__container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    row-gap: 2.5rem;
   }
   .footer__container > * {
     -ms-flex-preferred-size: calc(50% - 20px);
