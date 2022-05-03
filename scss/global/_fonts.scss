@@ -1,7 +1,7 @@
-@include font-face("Inter-Regular", "../fonts/Inter/Inter-Regular.woff2", 400, normal);
-@include font-face("Inter-Regular", "../fonts/Inter/Inter-Regular.woff", 400, normal);
-@include font-face("Inter-Bold", "../fonts/Inter/Inter-Bold.woff2", 700, normal);
-@include font-face("Inter-Bold", "../fonts/Inter/Inter-Bold.woff", 700, normal);
+@include font-face("Inter", "../fonts/Inter/Inter-Regular.woff2", 400, normal);
+@include font-face("Inter", "../fonts/Inter/Inter-Regular.woff", 400, normal);
+@include font-face("Inter", "../fonts/Inter/Inter-Bold.woff2", 700, normal);
+@include font-face("Inter", "../fonts/Inter/Inter-Bold.woff", 700, normal);
 
 @mixin fontFace_Inter() {
   font-family: "Inter", sans-serif;
